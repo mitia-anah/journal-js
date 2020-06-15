@@ -1,11 +1,11 @@
 const journalArray = [
     {
-        title : "My first blog",
+        title : "My first entry",
         content : "This is one the amazing blog which I have ever seen in my life, have a read whenever you got time."
     },
 
     {
-       titlte : "My new entry",
+       titlte : "My second entry",
        content : "To rise me from my weakness , to lead me into the rigth way, and to cover me from my illness is Jesus."
     },
 
@@ -19,13 +19,12 @@ const journalArray = [
    for (let i = 0; i < journalArray.length; i++) {
     let myEntries = journalArray[i];
     for (let property in myEntries) {
-    //   alert(property + '=' + myEntries[property]);
     if (journal === 1) {
-     alert(property + '=' + myEntries[property]);
-     } else if(journal === 2) {
-         alert(`2`);
-     } else if (journal === 3) {
-         alert(3);
+     alert(property + " " + ':' + " " + myEntries[property] );
+     } else if (journal === 2) {
+        alert(`Title : My new entry \n content :  smile is everything you’ll never understand.`);
+     } else {
+         alert(`just leave the site!`)
      }
     }
 }
